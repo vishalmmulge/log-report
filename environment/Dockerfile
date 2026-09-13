@@ -3,3 +3,6 @@ FROM python:3.12-slim-bookworm@sha256:8a7e7cc04fd3e2bd787f7f24e22d5d119aa590d429
 WORKDIR /app
 
 COPY access.log /app/access.log
+COPY solve.py /solution/solve.py
+
+CMD ["python3", "/solution/solve.py"]
